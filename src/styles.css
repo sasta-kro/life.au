@@ -124,7 +124,7 @@ h1 {
   font-size: 17px;
   line-height: 1.6;
   color: var(--muted);
-  margin: 12px 0 0;
+  margin: 8px 0 0;
 }
 
 .mobile-break {
@@ -138,21 +138,24 @@ h1 {
 .scene-frame {
   width: 100%;
   overflow: hidden;
-  margin-top: -24px;
+  margin-top: -28px;
 }
 
 .construction-scene {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 330px;
+  /* The panorama is 1440 x 380. Width-driven scaling keeps it edge to edge;
+     this cap only binds past a ~1710px viewport, trading tiny side gaps for
+     a sane height on ultrawide monitors. */
+  max-height: 450px;
 }
 
 .scene-caption {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 36px;
+  height: 28px;
 }
 
 .site-address {
@@ -171,8 +174,8 @@ h1 {
   font: inherit;
   font-size: 11px;
   cursor: pointer;
-  min-height: 34px;
-  padding: 7px 0 7px 12px;
+  min-height: 26px;
+  padding: 5px 0 5px 12px;
 }
 
 .motion-toggle[hidden] {
@@ -201,15 +204,15 @@ h1 {
    ========================================================================== */
 
 .projects {
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding-top: 6px;
+  padding-bottom: 14px;
 }
 
 .section-heading {
   display: flex;
   align-items: baseline;
   gap: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .section-heading h2 {
@@ -374,7 +377,7 @@ a.project:hover .project-arrow {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-block: 20px;
+  padding-block: 14px;
   color: var(--muted);
   font-size: 11px;
   line-height: 1.6;
@@ -382,6 +385,11 @@ a.project:hover .project-arrow {
 
 .developer {
   color: var(--ink);
+  text-decoration: none;
+}
+
+a.developer:hover {
+  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -579,16 +587,6 @@ a.project:hover .project-arrow {
   35%,
   70% {
     opacity: .85;
-  }
-}
-
-/* ==========================================================================
-   Wide screens
-   ========================================================================== */
-
-@media (min-width: 1650px) {
-  .construction-scene {
-    max-height: 380px;
   }
 }
 

@@ -31,7 +31,7 @@ export function App() {
     </main>
     <footer className="footer container">
       <span>Assumption University</span>
-      <span>Developed by <span className="developer">Sai Aike Shwe Tun Aung</span></span>
+      <span>Developed by <a className="developer" href="https://github.com/sasta-kro" target="_blank" rel="noopener noreferrer">Sai Aike Shwe Tun Aung</a></span>
     </footer>
   </>;
 }
