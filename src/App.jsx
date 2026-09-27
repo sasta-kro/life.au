@@ -9,9 +9,14 @@ export function App() {
     <main>
       <section className="hero" aria-labelledby="page-title">
         <div className="hero-copy container">
+          <img className="faculty-logo" src="assets/logos/vmes-logo.png" width="225" height="225"
+            alt="Vincent Mary School of Engineering, Science and Technology" decoding="async" />
           <p className="eyebrow">Assumption University</p>
-          <h1 id="page-title">Under construction<span className="full-stop">.</span></h1>
-          <p className="intro">This space is taking shape.<br className="mobile-break" /> A few projects are already live.</p>
+          <div className="hero-heading">
+            <h1 id="page-title">Life<span className="full-stop">.</span>AU</h1>
+            <p className="construction-status">Under construction</p>
+          </div>
+          <p className="intro">A few projects are already live.</p>
         </div>
         <ConstructionScene />
         <div className="scene-caption container">

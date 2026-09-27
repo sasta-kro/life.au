@@ -6,7 +6,8 @@ export function ProjectCard({ project }) {
   return (
     <li>
       <Element className={`project ${live ? 'project-live' : 'project-upcoming'}`}
-        href={live ? `https://life.au.edu${project.path}/` : undefined}>
+        href={live ? `https://life.au.edu${project.path}/` : undefined}
+        target={live ? '_blank' : undefined} rel={live ? 'noopener noreferrer' : undefined}>
         <div className="project-top">
           {project.logo && <img className="project-logo" src={project.logo} width="42" height="42" alt="" decoding="async" />}
           <h3>{project.name}</h3>
