@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!--
+    Favicon source for the Life.AU tab logo, rendered to
+    public/assets/favicon.png with: rsvg-convert -w 512 -h 512 scripts/favicon.svg -o public/assets/favicon.png
+    Paper background keeps the black wordmark legible on dark tab bars.
+  -->
+  <rect width="512" height="512" fill="#fbf7f0"/>
+  <text x="256" y="304" text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif" font-size="132"
+    textLength="440" lengthAdjust="spacingAndGlyphs"><tspan fill="#211a1a">Life</tspan><tspan fill="#a40b24">.</tspan><tspan fill="#211a1a">AU</tspan></text>
+</svg>
