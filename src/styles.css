@@ -22,7 +22,7 @@ body { margin: 0; min-width: 320px; }
 .eyebrow { color: var(--red); text-transform: uppercase; letter-spacing: .17em; font-size: 12px; font-weight: 700; margin: 0 0 12px; }
 h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
 h1 { font-size: clamp(48px, 5.8vw, 76px); letter-spacing: -.055em; line-height: 1.07; margin: 0; }
-.full-stop { color: var(--red); }
+.full-stop { color: var(--red); padding: 0 .045em; }
 .hero-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 28px; }
 .construction-status { color: var(--red); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.15; letter-spacing: -.025em; margin: 0; }
 .intro { font-size: 17px; line-height: 1.6; color: var(--muted); margin: 12px 0 0; }
